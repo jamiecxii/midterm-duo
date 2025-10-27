@@ -98,5 +98,10 @@ Unauthorized copying, modification, or distribution of this project is prohibite
     </div>
 @endsection
 
+
+----
+
+
+![Add Product](
     
 
