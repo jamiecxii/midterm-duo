@@ -85,11 +85,12 @@ The system serves as a practical tool for ensuring proper inventory tracking and
         </div>
     </div>
 @endsection
+
 ```blade
 
 ----
 
-## **Contributors**
+ ## **Contributors**
 **👤 Lovina Jamee C. Visaya**  
 **👤 John Carlo C. Songcuan**
 
