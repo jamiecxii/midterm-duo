@@ -1,0 +1,263 @@
+:root {
+    --bg: #f6f7f9;
+    --panel: #fff;
+    --muted: #64748b;
+    --text: #222;
+    --accent: #2563eb;
+    --success: #22c55e;
+    --danger: #ef4444;
+    --radius-lg: 1rem;
+    --radius-md: 0.75rem;
+    --shadow: 0 2px 12px rgba(30, 41, 59, 0.08);
+}
+
+body {
+    background: var(--bg);
+    font-family: 'Inter', 'Roboto', 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+    color: var(--text);
+    margin: 0;
+}
+
+.sidebar {
+    background: linear-gradient(180deg, #2563eb 0%, #1e293b 100%);
+    color: #fff;
+    width: 16rem;
+    min-width: 16rem;
+    padding: 2rem 1.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: .25rem;
+}
+
+.sidebar a {
+    display: block;
+    padding: .6rem .75rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    transition: background .15s;
+}
+
+.sidebar a:hover,
+.sidebar a.bg-white\/10 {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.header-card,
+.card,
+.form-card,
+.main-content {
+    background: var(--panel);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.header-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.stat {
+    text-align: center;
+    padding: 1.25rem;
+    border-radius: var(--radius-lg);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+}
+
+.stat .value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.stat .label {
+    color: var(--muted);
+    margin-top: 0.4rem;
+}
+
+.btn,
+.btn-sm,
+.btn-lg {
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(30, 41, 59, 0.06);
+    border: none;
+    background: #f3f4f6;
+    color: var(--text);
+    transition: background .2s, color .2s, box-shadow .2s;
+    padding: 0.5rem 1.25rem;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #e5e7eb;
+    color: #111;
+    box-shadow: 0 2px 8px rgba(30, 41, 59, 0.10);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-success {
+    background: var(--success);
+    color: #fff;
+}
+
+.btn-success:hover {
+    background: #16a34a;
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #b91c1c;
+}
+
+.btn-outline-primary,
+.btn-outline-success,
+.btn-outline-danger {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+}
+
+.btn-outline-primary {
+    color: var(--accent);
+}
+
+.btn-outline-primary:hover {
+    background: #e0e7ff;
+    color: #1d4ed8;
+}
+
+.btn-outline-success {
+    color: var(--success);
+}
+
+.btn-outline-success:hover {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.btn-outline-danger {
+    color: var(--danger);
+}
+
+.btn-outline-danger:hover {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.form-control,
+.form-select,
+input,
+select,
+textarea {
+    border-radius: var(--radius-md);
+    border: 1px solid #e5e7eb;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    background: #f8fafc;
+    color: var(--text);
+    margin-bottom: 1rem;
+    transition: border .2s, box-shadow .2s;
+}
+
+.form-control:focus,
+.form-select:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px #bfdbfe;
+    outline: none;
+}
+
+.table,
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--panel);
+    margin-bottom: 1.5rem;
+}
+
+thead th {
+    background: #f3f4f6;
+    color: var(--muted);
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tbody td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: var(--text);
+}
+
+tr:hover td {
+    background: #f8fafc;
+}
+
+.footer {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+        padding: 1rem;
+    }
+
+    .main-content,
+    .header-bar {
+        padding: 1rem;
+    }
+
+    .card,
+    .form-card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content,
+    .header-bar {
+        padding: 0.5rem;
+    }
+
+    .card,
+    .form-card {
+        padding: 0.5rem;
+    }
+}

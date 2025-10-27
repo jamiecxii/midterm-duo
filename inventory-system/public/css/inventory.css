@@ -1,0 +1,598 @@
+/* Public inventory.css - authoritative UI stylesheet */
+:root {
+    --bg: #f6f7f9;
+    --panel: #fff;
+    --muted: #64748b;
+    --text: #222;
+    --accent: #2563eb;
+    --success: #22c55e;
+    --danger: #ef4444;
+    --radius-lg: 1rem;
+    --radius-md: 0.75rem;
+    --shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+/* Reset / base */
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    background: var(--bg);
+    font-family: 'Inter', 'Roboto', 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+    color: var(--text);
+    margin: 0;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+/* Base (mobile-first) - simple, functional */
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, Roboto, Arial, sans-serif;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+/* center content wrap */
+.content-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* center */
+    width: 100%;
+}
+
+/* Mobile: hide sidebar, simple header and cards */
+.sidebar {
+    display: none
+}
+
+main {
+    padding: 1rem
+}
+
+.header-card {
+    background: var(--panel);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem
+}
+
+.card,
+.form-card {
+    background: var(--panel);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow)
+}
+
+.btn {
+    border-radius: 8px;
+    padding: .5rem .9rem;
+    font-weight: 600;
+    border: 0;
+    background: #f3f4f6
+}
+
+.form-control,
+input,
+select,
+textarea {
+    width: 100%;
+    padding: .6rem .8rem;
+    border: 1px solid #e6edf3;
+    border-radius: .5rem;
+    background: #fff
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+.table thead th {
+    background: #f8fafc;
+    padding: .6rem;
+    border-bottom: 1px solid #eef2f7
+}
+
+.table tbody td {
+    padding: .6rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* remove content-area grid (reverting to previous layout rules) */
+.content-area {
+    display: block
+}
+
+@media (min-width:1024px) {
+    .app-wrapper {
+        display: flex
+    }
+}
+
+/* restore previous main margin-left behavior handled by earlier rules */
+main {
+    margin-left: 0
+}
+
+/* Desktop-only detailed layout */
+@media (min-width: 1024px) {
+
+    /* Layout: fixed sidebar and centered content */
+    .app-wrapper {
+        display: flex;
+        min-height: 100vh
+    }
+
+    .sidebar {
+        display: block;
+        background: linear-gradient(180deg, #2563eb 0%, #1e293b 100%);
+        color: #fff;
+        width: 16rem;
+        min-width: 16rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0
+    }
+
+    .sidebar a {
+        display: block;
+        padding: .6rem .75rem;
+        border-radius: 8px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, .95);
+    }
+
+    .sidebar a:hover {
+        background: rgba(255, 255, 255, 0.06);
+    }
+
+    main {
+        flex: 1;
+        min-height: 100vh;
+        padding: 2rem;
+        margin-left: calc(16rem + 1rem);
+    }
+
+    /* Header card and unified main card */
+    .header-card {
+        background: var(--panel);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card,
+    .form-card {
+        background: var(--panel);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #e5e7eb;
+    }
+
+    /* Stats */
+    .stats-grid {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        margin-bottom: 1.5rem
+    }
+
+    .stat {
+        min-width: 200px;
+        max-width: 260px;
+        text-align: center;
+        padding: 1.5rem;
+        border-radius: var(--radius-lg);
+        background: var(--panel);
+        box-shadow: var(--shadow);
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .stat .value {
+        font-size: 2.4rem;
+        font-weight: 700
+    }
+
+    .stat .label {
+        color: var(--muted);
+        margin-top: .4rem;
+        font-size: 1.1rem
+    }
+
+    /* Buttons/forms/tables more polished on desktop */
+    .btn {
+        padding: .55rem 1.05rem;
+        border-radius: 10px;
+        font-weight: 600
+    }
+
+    .btn-primary {
+        background: var(--accent);
+        color: #fff
+    }
+
+    .form-control,
+    input,
+    select,
+    textarea {
+        border-radius: 8px;
+        padding: .75rem 1rem;
+        background: #fbfdff;
+        border: 1px solid #e6edf3
+    }
+
+    .table thead th {
+        background: #f3f4f6;
+        color: var(--muted);
+        font-weight: 600;
+        padding: .75rem 1rem;
+        border-bottom: 1px solid #eef2f7
+    }
+
+    .table tbody td {
+        padding: .75rem 1rem;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    /* Product grid sizing */
+    .row.g-4 {
+        margin: 0
+    }
+
+    .product-tile {
+        padding: 1.25rem;
+        min-height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+
+    /* ensure main padding remains comfortable */
+    main {
+        padding: 2rem 1rem
+    }
+
+    .content-wrap {
+        max-width: 1000px
+    }
+}
+
+/* Button colors unified and always visible */
+.btn,
+.btn-sm,
+.btn-lg {
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(30, 41, 59, 0.06);
+    border: none;
+    background: #f3f4f6;
+    color: var(--text);
+    transition: background .2s, color .2s, box-shadow .2s;
+    padding: 0.5rem 1.25rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: #1d4ed8;
+    color: #fff;
+}
+
+.btn-success {
+    background: var(--success);
+    color: #fff;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background: #16a34a;
+    color: #fff;
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: #fff;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+    background: #b91c1c;
+    color: #fff;
+}
+
+.btn-outline-primary {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    color: var(--accent);
+}
+
+.btn-outline-primary:hover {
+    background: #e0e7ff;
+    color: #1d4ed8;
+}
+
+.btn-outline-success {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    color: var(--success);
+}
+
+.btn-outline-success:hover {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.btn-outline-danger {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    color: var(--danger);
+}
+
+.btn-outline-danger:hover {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* Remove any accidental hidden/opacity rules for buttons */
+.btn[style*="display:none"],
+.btn[style*="opacity:0"],
+.btn[style*="visibility:hidden"] {
+    display: inline-block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Main content spacing and centering for balance */
+@media (min-width: 1024px) {
+    main {
+        margin-left: 16rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .content-wrap,
+    .main-content {
+        max-width: none;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Minor layout tweaks for balance */
+.card,
+.form-card,
+.panel {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.header-card {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.stats-grid {
+    margin-bottom: 2rem;
+}
+
+/* Utilities for spacing */
+.mt-2 {
+    margin-top: .5rem
+}
+
+.mb-2 {
+    margin-bottom: .5rem
+}
+
+.mt-4 {
+    margin-top: 1rem
+}
+
+.mb-4 {
+    margin-bottom: 1rem
+}
+
+.p-4 {
+    padding: 1rem
+}
+
+.p-6 {
+    padding: 1.5rem
+}
+
+.text-muted {
+    color: var(--muted)
+}
+
+/* Responsive tweaks */
+@media(max-width:767px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+        padding: 1rem
+    }
+
+    main {
+        margin-left: 0;
+        padding: 1rem
+    }
+
+    .header-card {
+        flex-direction: column;
+        gap: .75rem
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+        padding: 1rem;
+    }
+
+    .main-content,
+    .header-bar {
+        padding: 1rem;
+    }
+
+    .card,
+    .form-card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content,
+    .header-bar {
+        padding: 0.5rem;
+    }
+
+    .card,
+    .form-card {
+        padding: 0.5rem;
+    }
+}
+
+/* Minor helpers */
+.rounded-xl {
+    border-radius: var(--radius-lg)
+}
+
+.shadow-md {
+    box-shadow: var(--card-shadow)
+}
+
+.flex {
+    display: flex
+}
+
+.items-center {
+    align-items: center
+}
+
+.justify-between {
+    justify-content: space-between
+}
+
+.text-center {
+    text-align: center
+}
+
+/* Ensure focus styles on interactive elements remain visible */
+a:focus,
+button:focus {
+    outline: 2px solid rgba(37, 99, 235, 0.14);
+    outline-offset: 2px
+}
+
+/* Sidebar link active state */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.sidebar li {
+    margin-bottom: .25rem
+}
+
+.sidebar a {
+    display: block;
+    padding: .6rem .75rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    transition: background .15s;
+}
+
+.sidebar a:hover,
+.sidebar a.bg-white\/10 {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Footer */
+.footer {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* Small screens: improve table readability */
+@media(max-width:640px) {
+    .table thead {
+        display: none
+    }
+
+    .table tbody td {
+        display: block;
+        padding: .5rem;
+        background: #fff;
+        margin-bottom: .5rem;
+        border-radius: 8px
+    }
+}
