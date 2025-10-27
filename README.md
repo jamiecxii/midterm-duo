@@ -86,11 +86,12 @@ The system serves as a practical tool for ensuring proper inventory tracking and
     </div>
 @endsection
 
----------------------------------------------------------
 
-**Contributors**
-## **👤 Lovina Jamee C. Visaya**
-## **👤 John Carlo. C. Songcuan**
+----
+
+## **Contributors**
+**👤 Lovina Jamee C. Visaya**
+**👤 John Carlo. C. Songcuan**
 
 ----
 
