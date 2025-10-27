@@ -59,9 +59,7 @@ Unauthorized copying, modification, or distribution of this project is prohibite
 **Example: Adding a Product**
 
 @extends('layouts.app')
-
 @section('page_title', 'Products Inventory')
-
 @section('content')
     <div class="container py-4">
         <div class="form-card shadow-lg p-4">
@@ -97,8 +95,7 @@ Unauthorized copying, modification, or distribution of this project is prohibite
         </div>
     </div>
 @endsection
-
-
+'''blade
 ----
 
 
