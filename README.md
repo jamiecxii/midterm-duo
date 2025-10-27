@@ -57,7 +57,7 @@ Unauthorized copying, modification, or distribution of this project is prohibite
 
 ## **Screenshots or Code Snippets**
 **Example: Adding a Product**
-```blade
+
 @extends('layouts.app')
 
 @section('page_title', 'Products Inventory')
