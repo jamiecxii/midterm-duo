@@ -43,18 +43,6 @@ The system serves as a practical tool for ensuring proper inventory tracking and
 
 ---
 
-## **Contributors**
-**👤 Lovina Jamee C. Visaya**  
-**👤 John Carlo C. Songcuan**
-
----
-
-## **License**
-This project is created for **academic and educational purposes only**.  
-Unauthorized copying, modification, or distribution of this project is prohibited.
-
----
-
 ## **Screenshots or Code Snippets**
 **Example: Adding a Product**
  ```
@@ -96,14 +84,32 @@ Unauthorized copying, modification, or distribution of this project is prohibite
     </div>
 @endsection
  ```
-----
+---
 
-
+**This feature allow users to add product**
 ![Add Product](https://github.com/jamiecxii/midterm-duo/blob/main/inventory-system/public/Add%20product.jpg)
-
+**This feature allow users to add category**
 ![Add Category](https://github.com/jamiecxii/midterm-duo/blob/main/inventory-system/public/add%20category.jpg)
-
+**This feature allow users to add transaction**
+![Add Transaction](https://github.com/jamiecxii/midterm-duo/blob/main/inventory-system/public/Add%20Transactions.jpg)
+**This feature allow users view reports**
 ![Reports](https://github.com/jamiecxii/midterm-duo/blob/main/inventory-system/public/reports.jpfg)
+
+---
+
+## **Contributors**
+**👤 Lovina Jamee C. Visaya**  
+**👤 John Carlo C. Songcuan**
+
+---
+
+## **License**
+This project is created for **academic and educational purposes only**.  
+Unauthorized copying, modification, or distribution of this project is prohibited.
+
+
+
+
 
 
 
