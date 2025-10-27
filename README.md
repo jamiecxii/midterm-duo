@@ -90,10 +90,11 @@ The system serves as a practical tool for ensuring proper inventory tracking and
 ----
 
 ## **Contributors**
-**👤 Lovina Jamee C. Visaya**
-**👤 John Carlo. C. Songcuan**
 
-----
+**👤 Lovina Jamee C. Visaya**  
+**👤 John Carlo C. Songcuan**
+
+---
 
 ## **License**
 This project is created for **academic and educational purposes only**.  
