@@ -99,6 +99,8 @@ Unauthorized copying, modification, or distribution of this project is prohibite
 ----
 
 
-![Add Product](
+![Add Product](https://github.com/jamiecxii/midterm-duo/blob/main/inventory-system/public/Add%20product.jpg)
+
+![Add Category](
     
 
