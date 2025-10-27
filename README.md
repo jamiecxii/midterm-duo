@@ -103,6 +103,9 @@ Unauthorized copying, modification, or distribution of this project is prohibite
 
 ![Add Category](https://github.com/jamiecxii/midterm-duo/blob/main/inventory-system/public/add%20category.jpg)
 
-![Reports](
+![Reports](https://github.com/jamiecxii/midterm-duo/blob/main/inventory-system/public/reports.jpfg)
+
+
+
     
 
