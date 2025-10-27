@@ -85,12 +85,11 @@ The system serves as a practical tool for ensuring proper inventory tracking and
         </div>
     </div>
 @endsection
-
+```blade
 
 ----
 
 ## **Contributors**
-
 **👤 Lovina Jamee C. Visaya**  
 **👤 John Carlo C. Songcuan**
 
@@ -99,4 +98,5 @@ The system serves as a practical tool for ensuring proper inventory tracking and
 ## **License**
 This project is created for **academic and educational purposes only**.  
 Unauthorized copying, modification, or distribution of this project is prohibited.
+
 
