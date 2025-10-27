@@ -95,7 +95,7 @@ Unauthorized copying, modification, or distribution of this project is prohibite
         </div>
     </div>
 @endsection
-'''blade
+
 ----
 
 
